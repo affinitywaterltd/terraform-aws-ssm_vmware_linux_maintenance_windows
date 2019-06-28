@@ -69,28 +69,7 @@ variable "hour" {
   default     = "unnamed"
 }
 
-variable "powershell_package_file" {
-  description = "File location to install powershell module"
-  default     = "null"
-}
-
-variable "powershell_package_patameters" {
-  description = "Parameters to install powershell module"
-  default     = "/quiet"
-}
-
 variable "mi_list" {
   description = "List of Managed Instance Ids included in window"
   default     = {"week1" = ["mt-test","mt-test2"]}
-}
-
-
-variable "powershell_package_file_before" {
-  description = "File location to install powershell module"
-  default     = "null"
-}
-
-variable "powershell_package_patameters_before" {
-  description = "Parameters to install powershell module"
-  default     = "/qn"
 }
