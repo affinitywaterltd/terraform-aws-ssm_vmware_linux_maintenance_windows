@@ -1,4 +1,3 @@
-
 variable "account" {
   description = "Code for account, defined in TFE (e.g apps)"
   default     = "wholesale"
@@ -71,5 +70,8 @@ variable "hour" {
 
 variable "mi_list" {
   description = "List of Managed Instance Ids included in window"
-  default     = {"week1" = ["mt-test","mt-test2"]}
+  default = {
+    "week1" = ["mt-test", "mt-test2"]
+  }
 }
+
